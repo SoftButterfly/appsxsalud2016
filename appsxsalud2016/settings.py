@@ -36,6 +36,9 @@ SECURE_PROXY_SSL_HEADER = ("APPSXSALUD2016_HTTP_X_FORWARDED_PROTO", "https")
 Aplicaciones
 """
 INSTALLED_APPS = [
+    'material',
+    'material.admin',
+
     # Default
     'django.contrib.admin',
     'django.contrib.auth',
@@ -46,6 +49,7 @@ INSTALLED_APPS = [
 
     # third-party
     'captcha',
+    'overextends',
     'rest_framework',
 
     # Own
@@ -59,7 +63,7 @@ INSTALLED_APPS = [
 """ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
 Middlewares
 """
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -93,6 +97,7 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+            'builtins': ['overextends.templatetags.overextends_tags'],
             'debug': json.loads(os.getenv("APPSXSALUD2016_DEBUG_TEMPLATES", "true")),
         },
     },
@@ -143,7 +148,7 @@ AUTH_PASSWORD_VALIDATORS = [
 Internationalizacion y localizacion
 """
 LANGUAGE_CODE = 'es-es'
-TIME_ZONE = os.getenv("APPSXSALUD2016_TIME_ZONE", "UTC")
+TIME_ZONE = os.getenv("APPSXSALUD2016_TIME_ZONE", "America/Lima")
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
