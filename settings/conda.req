@@ -4,8 +4,10 @@
 freetype=2.5.5=1
 jbig=2.1=0
 jpeg=8d=1
+libgcc=5.2.0=0
 libpng=1.6.22=0
 libtiff=4.0.6=2
+ncurses=5.9=8
 openssl=1.0.2h=1
 pillow=3.3.0=py35_0
 pip=8.1.2=py35_0
