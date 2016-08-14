@@ -1,0 +1,7 @@
+# Folder patterns
+__pycache__/
+migrations/
+
+# File patterns
+*.sqlite3*
+*.pyc
