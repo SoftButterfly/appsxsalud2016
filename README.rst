@@ -1,8 +1,8 @@
-========
-Art Work
-========
+===============
+#appsxslaud2016
+===============
 
-Art Work Collection used in some SoftButterfly's projects.
+Proyecto desarrollado durante la hackathon organizada por el Ministerio de Salud
 
 .. image::
     https://img.shields.io/packagist/l/doctrine/orm.svg?maxAge=2592000&style=flat-square
