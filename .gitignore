@@ -1,6 +1,9 @@
 # Folder patterns
 __pycache__/
 migrations/
+static/
+media/
+logs/
 
 # File patterns
 *.sqlite3*
