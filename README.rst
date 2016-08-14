@@ -1,5 +1,5 @@
 ===============
-#appsxslaud2016
+#appsxsalud2016
 ===============
 
 Proyecto desarrollado durante la hackathon organizada por el Ministerio de Salud
